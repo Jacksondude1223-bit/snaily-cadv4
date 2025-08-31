@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+
+[build.env]
+NODE_VERSION = "18"
+PUPPETEER_SKIP_DOWNLOAD = "true"
+
+[build.nixpacksPlan]
+providers = ["node"]
+
+[deploy]
+startCommand = "pnpm run start"
